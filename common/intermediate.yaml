@@ -48,11 +48,6 @@ actions:
         fi
       fi
 
-  - action: overlay
-    description: Install apt policies
-    source: overlays/apt
-    destination: /
-
   - action: debootstrap
     suite: {{ $suite }}
     variant: minbase
